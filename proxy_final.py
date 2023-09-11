@@ -1,5 +1,6 @@
 import time
 
+
 class Producer:
 	"""Define the 'resource-intensive' object to instantiate!"""
 	def produce(self):
@@ -7,6 +8,7 @@ class Producer:
 
 	def meet(self):
 		print("Producer has time to meet you now!")
+
 
 class Proxy:
 	""""Define the 'relatively less resource-intensive' proxy to instantiate as a middleman"""
@@ -19,27 +21,28 @@ class Proxy:
 		print("Artist checking if Producer is available ...")
 
 		if self.occupied == 'No':
-			#If the producer is available, create a producer object!
+			# If the producer is available, create a producer object!
 			self.producer = Producer()
 			time.sleep(2)
 
-			#Make the prodcuer meet the guest!
+			# Make the prodcuer meet the guest!
 			self.producer.meet()
 			
 		else:
-			#Otherwise, don't instantiate a producer 
+			# Otherwise, don't instantiate a producer
 			time.sleep(2)
 			print("Producer is busy!")
 
-#Instantiate a Proxy
+
+# Instantiate a Proxy
 p = Proxy()
 
-#Make the proxy: Artist produce until Producer is available
+# Make the proxy: Artist produce until Producer is available
 p.produce()
 
-#Change the state to 'occupied'
+# Change the state to 'occupied'
 p.occupied = 'Yes'
 
-#Make the Producer produce
+# Make the Producer produce
 p.produce()
 
