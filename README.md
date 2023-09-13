@@ -1,7 +1,4 @@
-# Python: Design Patterns
-This is the repository for the LinkedIn Learning course Python: Design Patterns. The full course is available from [LinkedIn Learning][lil-course-url].
-
-![Python: Design Patterns][lil-thumbnail-url] 
+# Python: Design Patterns & Advanced Design Patterns
 
 If you’re a programmer, you’re probably plenty busy, so why not save some time and avoid reinventing the wheel by reusing well-proven design solutions—software design patterns—to improve your code quality? Design patterns encourage programming efficiency and code reuse. In this course, Jungwoo Ryoo takes a look at traditional design patterns as applied to Python. Jungwoo Ryoo covers 15 essential creational, structural, and behavioral patterns to help you solve common coding challenges, while introducing best practices that can help keep your solutions consistent, complete, and correct.
 
