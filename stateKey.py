@@ -1,5 +1,4 @@
-class AtmState():
-
+class AtmState:
 	name = "state"
 	allowed = []
 
@@ -14,23 +13,24 @@ class AtmState():
 	def __str__(self):
 		return self.name
 
-class Off(AtmState):
 
+class Off(AtmState):
 	name = "off"
 	allowed = ['on']
 
-class On(AtmState):
 
+class On(AtmState):
 	name = "on"
 	allowed = ['off']
 
-class ATM():
-	
+
+class ATM:
 	def __init__(self):
 		self.current = Off()
 
 	def setState(self, state):
 		self.current.goNext(state)
+
 
 def main():
 	atm = ATM()
@@ -39,6 +39,6 @@ def main():
 	atm.setState(Off)
 	atm.setState(Off)
 
+
 if __name__ == "__main__":
 	main()
-

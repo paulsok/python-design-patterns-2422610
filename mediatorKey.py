@@ -1,6 +1,4 @@
-import sys
-
-class Colleague(object):
+class Colleague:
 	def __init__(self, mediator, id):
 		self._mediator = mediator
 		self._id = id
@@ -13,6 +11,7 @@ class Colleague(object):
 
 	def receive(self, msg):
 		pass
+
 
 class ConcreteColleague(Colleague):
 	def __init__(self, mediator, id):
@@ -32,6 +31,7 @@ class Mediator:
 
 	def distribute(self, sender, msg):
 		pass
+
 
 class ConcreteMediator(Mediator):
 	def __init__(self):
@@ -59,6 +59,8 @@ def main():
 	mediator.add(c3)
 
 	c1.send("Good Morning!")
+	c2.send("Hello!")
+
 
 if __name__ == "__main__":
 	main()
